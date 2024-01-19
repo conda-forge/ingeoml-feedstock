@@ -1,5 +1,5 @@
 {% set name = "IngeoML" %}
-{% set version = "0.0.16" %}
+{% set version = "0.0.17" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/IngeoML-{{ version }}.tar.gz
-  sha256: f7951714ec693f4069bb5cab0386964c3c749a3f3736fa4665b4d41d606cd3f7
+  sha256: 51228ecba295ac524f02f96ee52256231eaad3566830aae2b46a55426b537977
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
